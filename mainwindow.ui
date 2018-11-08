@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>693</width>
+    <width>616</width>
     <height>185</height>
    </rect>
   </property>
@@ -22,12 +22,18 @@
      <rect>
       <x>10</x>
       <y>20</y>
-      <width>59</width>
+      <width>431</width>
       <height>18</height>
      </rect>
     </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777215</height>
+     </size>
+    </property>
     <property name="text">
-     <string>Song</string>
+     <string>No Song Loaded.</string>
     </property>
    </widget>
    <widget class="QPushButton" name="playButton">
@@ -56,27 +62,36 @@
      <string>Stop</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="nextButton">
+   <widget class="QPushButton" name="loadButton">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>220</x>
       <y>80</y>
       <width>60</width>
       <height>60</height>
      </rect>
     </property>
     <property name="text">
-     <string>Next</string>
+     <string>Load</string>
     </property>
    </widget>
    <widget class="QDial" name="dial">
     <property name="geometry">
      <rect>
-      <x>520</x>
-      <y>20</y>
+      <x>460</x>
+      <y>10</y>
       <width>151</width>
       <height>121</height>
      </rect>
+    </property>
+    <property name="whatsThis">
+     <string>Volume</string>
+    </property>
+    <property name="value">
+     <number>60</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
     </property>
     <property name="wrapping">
      <bool>false</bool>
@@ -88,8 +103,8 @@
    <widget class="QCheckBox" name="faceCheck">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>75</y>
+      <x>300</x>
+      <y>90</y>
       <width>141</width>
       <height>24</height>
      </rect>
@@ -119,7 +134,7 @@
      <rect>
       <x>10</x>
       <y>50</y>
-      <width>491</width>
+      <width>431</width>
       <height>8</height>
      </rect>
     </property>
@@ -136,26 +151,13 @@
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="folderButton">
-    <property name="geometry">
-     <rect>
-      <x>270</x>
-      <y>115</y>
-      <width>231</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>New Music Directory</string>
-    </property>
-   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>693</width>
+     <width>616</width>
      <height>23</height>
     </rect>
    </property>

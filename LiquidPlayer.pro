@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -33,6 +33,9 @@ HEADERS += \
 
 FORMS += \
         mainwindow.ui
+
+QMAKE_CXXFLAGS += \
+        -std=gnu++11
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
