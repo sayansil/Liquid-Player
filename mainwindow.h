@@ -24,9 +24,17 @@ private slots:
 
     void on_stopButton_clicked();
 
-    void on_loadButton_clicked();
-
     void on_dial_valueChanged(int value);
+
+    void on_actionNew_File_triggered();
+
+    void on_actionSenpai_triggered();
+
+    void on_actionR_M_G_triggered();
+
+    void on_actionLiquid_Player_triggered();
+
+    void on_actionExit_triggered();
 
 private:
     Ui::MainWindow *ui;
