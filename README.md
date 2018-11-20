@@ -15,4 +15,10 @@ The songs have to be kept in three different folders namely happy, sad and neutr
 
 ## Hardware requirements:
 
-A mid-ranged GPU is highly recommended for getting a good FPS value of the CNN based face detector. We have developed and tested this throughly on a gaming laptop with a 4GB NVIDIA GeForce GTX 1050 card and an i7 7700HQ CPU with 8GB RAM on Linux Mint 18.3.
+A mid-ranged GPU is highly recommended for getting a good FPS value of the CNN based face detector. We have developed and tested this throughly on a gaming laptop with a 4GB NVIDIA GeForce GTX 1050 card and an i7 7700HQ CPU with 8GB RAM running Linux Mint 18.3.
+
+## Libraries used:
+
+* We have used the [libvlc C++ wrapper](https://github.com/videolan/libvlcpp) as the Media Player backend.
+* The [Dlib C++ Library](http://dlib.net/) has been used for face detection. In our project we have used the CNN-based face detector available in Dlib shown in [this example](http://dlib.net/dnn_mmod_face_detection_ex.cpp.html)
+* The emotion recognition part has been done in Python using Keras.
