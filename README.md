@@ -22,3 +22,7 @@ A mid-ranged GPU is highly recommended for getting a good FPS value of the CNN b
 * We have used the [libvlc C++ wrapper](https://github.com/videolan/libvlcpp) as the Media Player backend.
 * The [Dlib C++ Library](http://dlib.net/) has been used for face detection. In our project we have used the CNN-based face detector available in Dlib shown in [this example](http://dlib.net/dnn_mmod_face_detection_ex.cpp.html)
 * The emotion recognition part has been done in Python using Keras.
+
+## Note:
+
+The emotion detection has been done in Python and the video playing and face detection has been done in C++. The integration of these two portions have been done using a system call: `system("python3 realtime.py");` in [test2.cpp](https://github.com/sayansil/Liquid-Player/blob/master/test2.cpp). This has prevented the need of using any wrapper code.
